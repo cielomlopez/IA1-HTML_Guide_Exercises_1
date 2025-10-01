@@ -1,104 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cielo Lopez - Personal Webpage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    /* First Section (Intro) */
+    .intro {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      height: 100vh;
+      background: #fff;
+    }
+
+    .intro .text h1 {
+      font-size: 5rem;
+      margin: 0;
+      color: #000;
+    }
+
+    .intro .text p {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #000;
+      line-height: 1.4;
+    }
+
+    .circle-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px 30px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 25px;
+      background: #777;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #555;
+    }
+
+    /* Second Section (About Me) */
+    .about {
+      padding: 50px 20px;
+      background: #f9f9f9;
+    }
+
+    .about h1 {
+      color: #2c3e50;
+    }
+
+    .about h2 {
+      color: #34495e;
+    }
+
+    .about p {
+      font-size: 18px;
+      color: #333;
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .about img {
+      border-radius: 10px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .about a {
+      display: inline-block;
+      margin: 10px;
+      padding: 8px 12px;
+      background: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .about a:hover {
+      background: #2980b9;
+    }
+
+    hr {
+      margin: 20px auto;
+      border: none;
+      height: 1px;
+      background: #ccc;
+      width: 80%;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- First Section -->
+  <div class="intro">
+    <div class="text">
+      <h1>Hi!</h1>
+      <p>It’s me, Ziel<br>Welcome to<br>my site.</p>
+      <div class="button-container">
+        <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+          Click mo to!
+        </button>
+      </div>
+    </div>
+    <img src="cat_profile.jpeg " alt="Cute Cat" class="circle-img">
+  </div>
+
+  <!-- Second Section (About Me) -->
+  <div class="about" id="about">
     <h1>CIELO LOPEZ</h1>
-
     <h2>About Me</h2>
-    <p>Hello! My name is <b>Cielo Lopez</b> and I love myself.</p>
-    <p><b>I love me.</b></p>
+    <p>Hello! My name is <b>Cielo Lopez</b> and I love my pets.</p>
+    <p><b>I love hugs.</b></p>
     <hr>
-
-    <p>I enjoy <i>sleeping</i> all the time.</p>
-    <p>I am a <u>full time sleeper</u>.</p>
-
-    <h3>My comfort foods are:</h3>
-    <ol>
-        <li>chocolates</li>
-        <li>burger from jollibee</li>
-        <li></li>
-    </ol>
-
-    <h3>Hobbies</h3>
-    <ul>
-        <li>scrolling on media</li>
-        <li>eating</li>
-        <li>sleeping</li>
-    </ul>
+    <p>I enjoy <i>playing games</i> all the time.</p>
+    <p>I am a <u>full-time dog/cat lover</u>.</p>
 
     <img src="siyel.jpg" alt="My Photo" width="300">
 
-    <p><a href="https://www.google.com" target="_blank">Visit Google</a></p>
-    <p><a href="cielomendioro.lopez@gmail.com">Send me an Email</a></p>
+    <!-- Links -->
+    <a href="mailto:example@email.com">Send me an Email</a>
+  </div>
 
-    <h3>Sample Table</h3>
-    <table border="1" cellpadding="5">
-        <tr>
-            <th>Name</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Cielo</td>
-            <td>21</td>
-        </tr>
-    </table>
-
-    <h3>Form</h3>
-    <form>
-        <p>Name: <input type="text" name="fullname"></p>
-        <p>Password: <input type="password" name="pwd"></p>
-
-        <p>Gender:</p>
-        <input type="radio" name="gender" value="male"> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-
-        <p>Hobbies:</p>
-        <input type="checkbox" name="hobby" value="reading"> Reading<br>
-        <input type="checkbox" name="hobby" value="sports"> Sports<br>
-        <input type="checkbox" name="hobby" value="travel"> Travel<br>
-
-        <p>
-            <label for="country">Select Country:</label>
-            <select id="country" name="country">
-                <option>Philippines</option>
-                <option>Japan</option>
-                <option>USA</option>
-            </select>
-        </p>
-
-        <p><button type="submit">Submit</button></p>
-    </form>
-
-    <h3>Embedded Content</h3>
-     <iframe src="https://www.google.com" width="600" height="400"></iframe>
-    <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        frameborder="0" allowfullscreen>
-    </iframe>
-
-    <p>Water formula: H<sub>2</sub>O</p>
-    <p>x<sup>2</sup></p>
-    <p>This is <strong>very important</strong>!</p>
-    <p>Please <em>read carefully</em>.</p>
-    <p><small>© 2025 My Website</small></p>
-
-    <blockquote>
-        "Life is 10% what happens to you and 90% how you react to it."
-    </blockquote>
-
-    <p>He said, <q>Hello, world!</q></p>
-    <p><abbr title="HyperText Markup Language">HTML</abbr> is a language of the web.</p>
-
-    <address>
-        Written by Cielo Lopez<br>
-        Visit us at <a href="http://www.mywebsite.com">www.mywebsite.com</a><br>
-        Polangui, Philippines
-    </address>
-
-    <p>Task Progress:</p>
-    <progress value="70" max="100"></progress>
 </body>
 </html>
-
