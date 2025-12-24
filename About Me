@@ -8,8 +8,9 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
       text-align: center;
     }
 
@@ -20,20 +21,21 @@
       align-items: center;
       gap: 40px;
       height: 100vh;
-      background: #fff;
+      background: #ffffff;
+      padding: 20px;
     }
 
     .intro .text h1 {
       font-size: 5rem;
       margin: 0;
-      color: #000;
+      color: #2c3e50;
     }
 
     .intro .text p {
-      margin: 0;
+      margin: 10px 0 0 0;
       font-size: 1.5rem;
-      font-weight: bold;
-      color: #000;
+      font-weight: 500;
+      color: #34495e;
       line-height: 1.4;
     }
 
@@ -42,6 +44,8 @@
       height: 300px;
       border-radius: 50%;
       object-fit: cover;
+      border: 4px solid #3498db;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .button-container {
@@ -52,52 +56,60 @@
       padding: 12px 30px;
       font-size: 1rem;
       border: none;
-      border-radius: 25px;
-      background: #777;
+      border-radius: 30px;
+      background: #3498db;
       color: white;
       cursor: pointer;
       transition: 0.3s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
     }
 
     button:hover {
-      background: #555;
+      background: #2980b9;
     }
 
     /* Second Section (About Me) */
     .about {
-      padding: 50px 20px;
+      padding: 60px 20px;
       background: #f9f9f9;
     }
 
     .about h1 {
       color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
     }
 
     .about h2 {
       color: #34495e;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .about p {
-      font-size: 18px;
-      color: #333;
+      font-size: 1.1rem;
+      color: #555;
       max-width: 700px;
       margin: 10px auto;
+      line-height: 1.6;
     }
 
     .about img {
-      border-radius: 10px;
+      border-radius: 15px;
       margin: 20px auto;
       display: block;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     }
 
     .about a {
       display: inline-block;
-      margin: 10px;
-      padding: 8px 12px;
+      margin: 15px 10px;
+      padding: 10px 18px;
       background: #3498db;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      transition: 0.3s;
     }
 
     .about a:hover {
@@ -105,7 +117,7 @@
     }
 
     hr {
-      margin: 20px auto;
+      margin: 30px auto;
       border: none;
       height: 1px;
       background: #ccc;
@@ -122,11 +134,11 @@
       <p>It’s me, Ziel<br>Welcome to<br>my site.</p>
       <div class="button-container">
         <button onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
-          Click mo to!
+          Click Me!
         </button>
       </div>
     </div>
-    <img src="cat_profile.jpeg " alt="Cute Cat" class="circle-img">
+    <img src="cat_profile.jpeg" alt="Cute Cat" class="circle-img">
   </div>
 
   <!-- Second Section (About Me) -->
@@ -139,7 +151,7 @@
     <p>I enjoy <i>playing games</i> all the time.</p>
     <p>I am a <u>full-time dog/cat lover</u>.</p>
 
-    <img src="siyel.jpg" alt="My Photo" width="300">
+    <img src="cielo.jpg" alt="My Photo" width="300">
 
     <!-- Links -->
     <a href="mailto:example@email.com">Send me an Email</a>
