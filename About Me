@@ -138,7 +138,7 @@
         </button>
       </div>
     </div>
-    <img src="cat_profile.jpeg" alt="Cute Cat" class="circle-img">
+    <img src="cielo.jpeg" alt="Cute Cat" class="circle-img">
   </div>
 
   <!-- Second Section (About Me) -->
@@ -159,3 +159,4 @@
 
 </body>
 </html>
+
